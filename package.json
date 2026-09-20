@@ -1,0 +1,32 @@
+{
+  "name": "express-server",
+  "version": "1.0.0",
+  "description": "Task01 Node.js Express server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "db:create": "node database/create.js",
+    "db:seed": "node database/seed.js",
+    "db:embed": "node database/embed.js",
+    "db:check": "node database/neighbours.js",
+    "db:setup": "npm run db:create && npm run db:seed && npm run db:embed"
+  },
+  "keywords": [
+    "express",
+    "server",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@huggingface/transformers": "^4.3.0",
+    "bcrypt": "^6.0.0",
+    "express": "^5.0.0",
+    "express-session": "^1.19.0",
+    "gray-matter": "^4.0.3",
+    "marked": "^18.0.13",
+    "morgan": "^1.10.0",
+    "sanitize-html": "^2.17.7"
+  }
+}
